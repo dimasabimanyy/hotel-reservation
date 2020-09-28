@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Banner } from "../components/Banner";
-import defaultBcg from "../images/room-1.jpeg";
+import defaultBcg from "../images/room-1.jpg";
 import { RoomContext } from "../context";
 import StyledHero from "../components/StyledHero";
 
