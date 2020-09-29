@@ -3,6 +3,7 @@ import { RoomContext } from "../context";
 import Loading from "./Loading";
 import Room from "./Room";
 import Title from "./Title";
+import sectionImg from "../images/section-title.png";
 
 export default class FeaturedRooms extends Component {
   static contextType = RoomContext;
@@ -15,9 +16,11 @@ export default class FeaturedRooms extends Component {
 
     return (
       <section className="featured-rooms">
-        <Title title="Featured Rooms" />
-        <div className="featured-rooms-center">
-          {loading ? <Loading /> : rooms}
+        <div className="featured-wrap container">
+          <Title title="Rooms & Suites" subTitle="Discover" img={sectionImg} />
+          <div className="featured-rooms-center">
+            {loading ? <Loading /> : rooms}
+          </div>
         </div>
       </section>
     );

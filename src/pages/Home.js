@@ -4,21 +4,22 @@ import { Banner } from "../components/Banner";
 import FeaturedRooms from "../components/FeaturedRooms";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
+import HomeTitle from "../images/home-title.png";
 
 export const Home = () => {
   return (
     <React.Fragment>
       <Hero>
         <Banner
-          title="luxurious rooms"
-          subTitle="deluxe rooms starting at $299"
+          title={<img src={HomeTitle} alt="Summer Vacations" />}
+          subTitle="Memories that will last forever"
         >
-          <Link to="/rooms" className="btn-primary">
-            Our rooms
+          <Link to="/rooms" className="btn-primary to-room">
+            View Our Rooms <i className="fas fa-long-arrow-alt-right"></i>
           </Link>
         </Banner>
       </Hero>
-      <Services />
+      {/* <Services /> */}
       <FeaturedRooms />
     </React.Fragment>
   );
