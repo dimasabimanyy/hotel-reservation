@@ -5,7 +5,7 @@ import "../css/Footer.css";
 function Footer() {
   return (
     <footer>
-      <div className="footer-info container">
+      <div className="footer-info footer-container">
         <div className="footer-logo">
           <img src={footerLogo} alt="logo" />
         </div>
@@ -23,7 +23,20 @@ function Footer() {
         </div>
         <div className="social-footer">
           <h6>FOLLOW US</h6>
-          <i className="fa fa-github"></i>
+          <div className="icons-wrap">
+            <a href="https://instagram.com">
+              <i className="fa fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com">
+              <i className="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com">
+              <i className="fa fa-twitter"></i>
+            </a>
+            <a href="https://youtube.com">
+              <i className="fa fa-youtube"></i>
+            </a>
+          </div>
         </div>
       </div>
       <div className="footer-slash"></div>
