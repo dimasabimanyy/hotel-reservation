@@ -16,17 +16,17 @@ export default class FeaturedRooms extends Component {
     });
 
     const breakpoint = [
-      { width: 0, itemsToShow: 1 },
-      { width: 768, itemsToShow: 2 },
-      { width: 1200, itemsToShow: 3 },
-      { width: 1500, itemsToShow: 4 },
+      { width: 1, itemsToShow: 1 },
+      { width: 500, itemsToShow: 2 },
+      { width: 768, itemsToShow: 3 },
+      { width: 1200, itemsToShow: 4 },
     ];
 
     return (
       <section className="featured-rooms">
         <div className="featured-wrap container">
           <Title title="Rooms & Suites" subTitle="Discover" img={sectionImg} />
-          <div className="featured-rooms-center">
+          <div className="featured-rooms-carousel">
             {loading ? (
               <Loading />
             ) : (

@@ -4,21 +4,31 @@ import PropTypes from "prop-types";
 import defaultImg from "../images/room-1.jpg";
 
 export default function Room({ room }) {
-  const { name, slug, images, price } = room;
+  const { name, slug, images, price, size, type } = room;
   return (
-    <article className="room">
-      <div className="img-container">
-        <img src={images[0] || defaultImg} alt="Room" />
-        <div className="room-price">
-          <h6>${price}</h6>
-          <p>per night</p>
-        </div>
-        <Link to={`rooms/${slug}`} className="btn-primary room-link">
-          Features
+    <div className="room">
+      <div className="img-container img-hover-zoom">
+        <Link to={`rooms/${slug}`}>
+          <img src={images[0] || defaultImg} alt="Room" />
+          <div className="img-shadow"></div>
+          <div className="room-price">
+            <p>From </p>
+            <p>
+              <span>${price}</span> /night
+            </p>
+          </div>
         </Link>
       </div>
-      <p className="room-info">{name}</p>
-    </article>
+      <div className="room-info">
+        <Link to={`rooms/${slug}`}>
+          <h4>{name}</h4>
+        </Link>
+        <div className="room-additional-info">
+          <p className="room-size">{size} SQ</p>|
+          <p className="room-type">{type}</p>
+        </div>
+      </div>
+    </div>
   );
 }
 

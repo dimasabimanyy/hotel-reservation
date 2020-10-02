@@ -82,6 +82,7 @@ h6 {
 
 .section-title {
   text-align: center;
+  margin-bottom: 3.5rem;
 }
 
 .section-title h6 {
@@ -221,26 +222,101 @@ nav {
   padding: 8em 0;
 }
 
-.featured-rooms-carousel {
-  margin: 0 auto;
-  display: grid;
-}
-
 /* Room */
 
 .room {
   position: relative;
   width: 100%;
-  height: 400px;
-  margin: 0 0.5em;
-}
-
-.img-container {
-  position: relative;
+  /* height: 400px; */
+  margin: 0 0.7em;
+  background-color: var(--white);
 }
 
 .img-container img {
   width: 100%;
+  height: 300px;
   object-fit: cover;
+}
+
+.room .img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  position: relative;
+}
+
+/* [2] Transition property for smooth transformation of images */
+.room .img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-shadow {
+  width: 100%;
+  height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.room:hover .img-hover-zoom img {
+  transform: scale(1.5);
+}
+.room:hover .img-hover-zoom .img-shadow {
+  opacity: 0.5;
+}
+
+.room-info {
+  padding: 2em;
+  text-transform: capitalize;
+}
+
+.room-info h4 {
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.room-additional-info {
+  display: flex;
+}
+
+.room-price {
+  position: absolute;
+  z-index: 99;
+  top: 30px;
+  left: 30px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.room-price p {
+  color: var(--white);
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.room-price p span {
+  font-size: 27px;
+  color: #e4a853;
+}
+
+.room:hover .img-hover-zoom .room-price {
+  opacity: 1;
+}
+
+.room-size {
+  font-family: var(--dmSans);
+  margin-right: 7px;
+  font-size: 15px;
+  color: #686868;
+}
+
+.room-type {
+  font-family: var(--dmSans);
+  margin: 0 7px;
+  font-size: 15px;
+  color: #686868;
 }
