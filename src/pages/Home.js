@@ -2,8 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Banner } from "../components/Banner";
 import FeaturedRooms from "../components/FeaturedRooms";
+import FeaturedSpecial from "../components/FeaturedSpecial";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
+import Welcome from "../components/Welcome";
 import HomeTitle from "../images/home-title.png";
 
 export const Home = () => {
@@ -20,6 +22,8 @@ export const Home = () => {
         </Banner>
       </Hero>
       {/* <Services /> */}
+      <Welcome />
+      <FeaturedSpecial />
       <FeaturedRooms />
     </React.Fragment>
   );

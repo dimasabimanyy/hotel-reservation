@@ -1,0 +1,33 @@
+/* Welcome */
+
+#welcome {
+  background: #edebe5;
+  padding: 8em 0;
+}
+
+.welcome-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.welcome-info {
+  text-align: center;
+  padding: 0 5em;
+}
+
+.welcome-info p {
+  margin-top: 2em;
+  line-height: 2em;
+}
+
+.welcome-img img {
+  width: 100%;
+}
+
+/* Featured Special Section */
+
+#featured-special {
+  background: url("../images/dark-bg.jpg") no-repeat;
+  background-position: center;
+  padding: 5em 0;
+}
