@@ -12,7 +12,7 @@ function Experience() {
         <h3>Exclusive Complimentary Services</h3>
         <p className="experience-contact">
           Call us on <span>(+844) 1800 3377</span> or Email us
-          <span>services@erios.com</span>
+          <span> services@erios.com</span>
         </p>
         <Link to="/rooms" className="btn-primary btn-experience">
           Join Us Now <i className="fas fa-long-arrow-alt-right"></i>

@@ -8,6 +8,7 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Welcome from "../components/Welcome";
 import HomeTitle from "../images/home-title.png";
+import Testimonials from "../components/Testimonials";
 
 export const Home = () => {
   return (
@@ -26,6 +27,7 @@ export const Home = () => {
       <FeaturedSpecial />
       <FeaturedRooms />
       <Services />
+      <Testimonials />
       <Experience />
     </React.Fragment>
   );
