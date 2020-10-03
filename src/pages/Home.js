@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Banner } from "../components/Banner";
 import FeaturedRooms from "../components/FeaturedRooms";
 import FeaturedSpecial from "../components/FeaturedSpecial";
+import Experience from "../components/Experience";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Welcome from "../components/Welcome";
@@ -25,6 +26,7 @@ export const Home = () => {
       <FeaturedSpecial />
       <FeaturedRooms />
       <Services />
+      <Experience />
     </React.Fragment>
   );
 };

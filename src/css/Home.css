@@ -91,7 +91,7 @@
 
 /* The Transformation */
 .zoom-n-rotate:hover img {
-  transform: scale(1.4gi) rotate(25deg);
+  transform: scale(1.4) rotate(25deg);
 }
 
 .special-gold {
@@ -256,7 +256,8 @@
 
 .services {
   background: var(--grayBg);
-  padding: 5em 0;
+  padding-bottom: 5em;
+  padding-top: 2em;
 }
 
 .services-grid {
@@ -365,4 +366,57 @@
 
 .service-link i:hover {
   background: #c0bfbd;
+}
+
+/* Experience section */
+
+.experience {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.experience-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.experience-info {
+  position: relative;
+  text-align: center;
+}
+
+.experience-word {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.experience-info h3 {
+  color: var(--white);
+  margin-bottom: 0.7em;
+}
+
+.experience-contact {
+  color: var(--white);
+  font-size: 21px;
+  margin-bottom: 2.3em;
+}
+
+.experience-contact span {
+  color: var(--primaryColor);
+}
+
+.btn-experience {
+  background: var(--primaryColor);
+  color: var(--white);
+}
+
+.btn-experience:hover {
+  background: var(--white);
+  color: var(--black);
 }
