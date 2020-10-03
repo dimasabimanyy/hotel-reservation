@@ -5,6 +5,7 @@ import FeaturedSpecialItem from "./FeaturedSpecialItem";
 import img1 from "../images/special-item-1.jpg";
 import img2 from "../images/special-item-2.jpg";
 import goldBg from "../images/gold-bg.jpg";
+import { Link } from "react-router-dom";
 
 function FeaturedSpecial() {
   return (
@@ -32,6 +33,9 @@ function FeaturedSpecial() {
                 Start your day with ourt $5 Breakfast on the go package at
                 central market
               </p>
+              <Link to="/rooms" className="btn-primary to-special-featured">
+                Learn More <i className="fas fa-long-arrow-alt-right"></i>
+              </Link>
             </div>
           </div>
           <FeaturedSpecialItem

@@ -2,7 +2,7 @@ import React from "react";
 
 function FeaturedSpecialItem({ title, subTitle, img }) {
   return (
-    <div className="special-item">
+    <div className="special-item zoom-n-rotate">
       <img src={img} alt={title} />
       <div>
         <div className="black-shadow"></div>
