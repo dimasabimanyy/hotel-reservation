@@ -1,6 +1,7 @@
 import React from "react";
+import img from "../images/section-title.png";
 
-export default function Title({ title, subTitle, img, color, subColor }) {
+export default function Title({ title, subTitle, color, subColor }) {
   return (
     <div className="section-title">
       <img src={img} alt="title" />

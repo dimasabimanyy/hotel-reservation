@@ -1,6 +1,5 @@
 import React from "react";
 import Title from "./Title";
-import sectionImg from "../images/section-title.png";
 import welcomeImg from "../images/welcome.png";
 
 function Welcome() {
@@ -8,11 +7,7 @@ function Welcome() {
     <div id="welcome">
       <div className="welcome-wrap container">
         <div className="welcome-info">
-          <Title
-            title="Upgrade Your Experience"
-            subTitle="welcome"
-            img={sectionImg}
-          />
+          <Title title="Upgrade Your Experience" subTitle="welcome" />
           <p>
             Enjoy sweeping water views when you reserve a Hudson River View
             Suite. Spread out in an Executive or Luxury Suite with over 700

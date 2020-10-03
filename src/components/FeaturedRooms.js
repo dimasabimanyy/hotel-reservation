@@ -3,7 +3,6 @@ import { RoomContext } from "../context";
 import Loading from "./Loading";
 import Room from "./Room";
 import Title from "./Title";
-import sectionImg from "../images/section-title.png";
 import Carousel from "react-elastic-carousel";
 
 export default class FeaturedRooms extends Component {
@@ -25,7 +24,7 @@ export default class FeaturedRooms extends Component {
     return (
       <section className="featured-rooms">
         <div className="featured-wrap container">
-          <Title title="Rooms & Suites" subTitle="Discover" img={sectionImg} />
+          <Title title="Rooms & Suites" subTitle="Discover" />
           <div className="featured-rooms-carousel">
             {loading ? (
               <Loading />

@@ -1,6 +1,5 @@
 import React from "react";
 import Title from "./Title";
-import titleImg from "../images/section-title.png";
 import FeaturedSpecialItem from "./FeaturedSpecialItem";
 import img1 from "../images/special-item-1.jpg";
 import img2 from "../images/special-item-2.jpg";
@@ -14,7 +13,6 @@ function FeaturedSpecial() {
         <Title
           title="Featured Specials"
           subTitle="Exclusive Offers"
-          img={titleImg}
           color="#fff"
           subColor="#fff"
         />

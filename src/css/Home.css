@@ -91,7 +91,7 @@
 
 /* The Transformation */
 .zoom-n-rotate:hover img {
-  transform: scale(1.4) rotate(25deg);
+  transform: scale(1.4gi) rotate(25deg);
 }
 
 .special-gold {
@@ -136,4 +136,246 @@
   color: #000;
   font-size: 16px;
   line-height: 24px;
+}
+
+/* Featured Rooms */
+
+.featured-rooms {
+  background: #edebe5;
+  padding: 8em 0;
+}
+
+.featured-rooms-carousel {
+  margin-top: 3em;
+}
+
+/* Room */
+
+.room {
+  position: relative;
+  width: 100%;
+  margin: 0 0.7em;
+  background-color: var(--white);
+}
+
+.img-container img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.room .img-hover-zoom {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Transition property for smooth transformation of images */
+.room .img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.room:hover .img-hover-zoom img {
+  transform: scale(1.5);
+}
+.room:hover .img-hover-zoom .img-shadow {
+  opacity: 0.5;
+}
+
+.room-info {
+  padding: 2em;
+  text-transform: capitalize;
+}
+
+.room-info h4 {
+  font-size: 21px;
+  margin-bottom: 8px;
+  transition: 0.3s ease-in;
+}
+
+.room-info h4:hover {
+  color: #dd9836;
+}
+
+.room-additional-info {
+  display: flex;
+}
+
+.room-price {
+  position: absolute;
+  z-index: 99;
+  top: 30px;
+  left: 30px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.room-price p {
+  color: var(--white);
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.room-price p span {
+  font-size: 27px;
+  color: #e4a853;
+}
+
+.room:hover .img-hover-zoom .room-price {
+  opacity: 1;
+}
+
+.room-size {
+  font-family: var(--dmSans);
+  margin-right: 7px;
+  font-size: 15px;
+  color: #686868;
+}
+
+.room-type {
+  font-family: var(--dmSans);
+  margin: 0 7px;
+  font-size: 15px;
+  color: #686868;
+}
+
+/* Services */
+
+.services {
+  background: var(--grayBg);
+  padding: 5em 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 4em;
+  gap: 2em;
+}
+
+.service:nth-child(odd) {
+  background: transparent;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  background: var(--white);
+}
+
+.service {
+  background: var(--white);
+  text-align: center;
+  padding: 4em 1.5em;
+  transition: 0.2s ease-in;
+}
+
+.service-icon {
+  position: relative;
+}
+
+.service-icon i {
+  font-size: 35px;
+  position: relative;
+  z-index: 999;
+}
+
+.orange-ball {
+  width: 45px;
+  height: 45px;
+  background: #e6a54a;
+  border-radius: 50%;
+  position: absolute;
+  left: 32%;
+  top: -17px;
+}
+
+/* Heartbeat animation on service */
+
+.service:hover .service-icon i {
+  animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+  /* 0% {
+    transform: scale(1);
+  }
+  14.28% {
+    transform: scale(0.85);
+  }
+  28.56% {
+    transform: scale(1);
+  }
+  42.84% {
+    transform: scale(0.85);
+  }
+  57.12% {
+    transform: scale(1);
+  }
+  71.4% {
+    transform: scale(0.85);
+  }
+  85.68% {
+    transform: scale(1);
+  } */
+  0% {
+    transform: scale(1);
+  }
+  12.5% {
+    transform: scale(0.85);
+  }
+  24.4% {
+    transform: scale(1);
+  }
+  36.8% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(1);
+  }
+  62% {
+    transform: scale(0.85);
+  }
+  74% {
+    transform: scale(1);
+  }
+  86% {
+    transform: scale(0.85);
+  }
+}
+
+.service h6 {
+  font-size: 18px;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+.service p {
+  line-height: 1.8em;
+  margin-bottom: 2em;
+}
+
+.service-link i {
+  padding: 1em;
+  background: #dddcd9;
+  border-radius: 50%;
+  color: #707070;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.service-link i:hover {
+  background: #c0bfbd;
 }

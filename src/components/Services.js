@@ -1,50 +1,58 @@
 import React, { Component } from "react";
 import Title from "./Title";
-import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 class Services extends Component {
   state = {
     services: [
       {
-        icon: <FaCocktail />,
-        title: "Free Cocktails",
-        info:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, corporis!",
+        icon: <i class="far fa-paper-plane"></i>,
+        title: "Pick Up & Drop",
+        info: "We'll pick up from airport while you comfy on your ride.",
+        slug: "/",
       },
       {
-        icon: <FaHiking />,
-        title: "Endless Hiking",
-        info:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, corporis!",
+        icon: <i class="fas fa-car-alt"></i>,
+        title: "Parking Space",
+        info: "Please consider your private parking or better yet.",
+        slug: "/",
       },
       {
-        icon: <FaShuttleVan />,
-        title: "Free Shuttle",
-        info:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, corporis!",
+        icon: <i class="fas fa-glass-martini-alt"></i>,
+        title: "Welcome Drink​",
+        info: "We have the fuel to start your day right.",
+        slug: "/",
       },
       {
-        icon: <FaBeer />,
-        title: "Strongest Beer",
-        info:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, corporis!",
+        icon: <i class="fas fa-bath"></i>,
+        title: "Hot & Cold Water",
+        info: "Let us know if you need anything to be more comfortable",
+        slug: "/",
       },
     ],
   };
   render() {
     return (
       <section className="services">
-        <Title title="services" />
-        <div className="services-center">
-          {this.state.services.map((item, index) => {
-            return (
-              <article key={index} className="service">
-                <span>{item.icon}</span>
-                <h6>{item.title}</h6>
-                <p>{item.info}</p>
-              </article>
-            );
-          })}
+        <div className="services-wrap container">
+          <Title title="Extra Services" subTitle="Services" />
+          <div className="services-grid">
+            {this.state.services.map((item, index) => {
+              return (
+                <div key={index} className="service">
+                  <div className="service-icon">
+                    <div className="orange-ball"></div>
+                    {item.icon}
+                  </div>
+                  <h6>{item.title}</h6>
+                  <p>{item.info}</p>
+                  <Link to="/{slug}" className="service-link">
+                    <i className="fas fa-long-arrow-alt-right"></i>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
     );

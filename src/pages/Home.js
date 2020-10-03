@@ -21,10 +21,10 @@ export const Home = () => {
           </Link>
         </Banner>
       </Hero>
-      {/* <Services /> */}
       <Welcome />
       <FeaturedSpecial />
       <FeaturedRooms />
+      <Services />
     </React.Fragment>
   );
 };
