@@ -290,6 +290,7 @@
   font-size: 35px;
   position: relative;
   z-index: 999;
+  color: #424242;
 }
 
 .orange-ball {
@@ -300,36 +301,22 @@
   position: absolute;
   left: 32%;
   top: -17px;
+  transition: 0.3s ease;
 }
 
 /* Heartbeat animation on service */
+.service:hover .orange-ball {
+  left: 39%;
+  top: -3px;
+  opacity: 0;
+}
 
 .service:hover .service-icon i {
   animation: heartbeat 2s infinite;
+  color: #e6a54a;
 }
 
 @keyframes heartbeat {
-  /* 0% {
-    transform: scale(1);
-  }
-  14.28% {
-    transform: scale(0.85);
-  }
-  28.56% {
-    transform: scale(1);
-  }
-  42.84% {
-    transform: scale(0.85);
-  }
-  57.12% {
-    transform: scale(1);
-  }
-  71.4% {
-    transform: scale(0.85);
-  }
-  85.68% {
-    transform: scale(1);
-  } */
   0% {
     transform: scale(1);
   }
