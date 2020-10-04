@@ -1,0 +1,331 @@
+@media only screen and (max-width: 1300px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .footer-container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  body {
+    background-color: maroon;
+  }
+
+  .section-title h6 {
+    font-size: 11px;
+  }
+
+  .section-title h1 {
+    font-size: 40px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .banner img {
+    width: 80%;
+  }
+
+  .banner p {
+    font-size: 25px;
+  }
+
+  #welcome {
+    padding: 3em 0;
+  }
+
+  .welcome-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-info {
+    /* background: maroon; */
+    padding: 2em 2em;
+  }
+
+  .welcome-img {
+    text-align: center;
+  }
+
+  .welcome-img img {
+    width: 60%;
+    margin: 2em auto;
+  }
+
+  .featured-special {
+    padding: 3em 0;
+  }
+
+  .special-item-wrap {
+    gap: 0 1em;
+  }
+
+  .featured-rooms {
+    padding: 4em 0;
+  }
+
+  .img-container img {
+    height: 250px;
+  }
+
+  .room .img-hover-zoom {
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .services {
+    padding-top: 3em;
+    padding-bottom: 5em;
+  }
+
+  .testimonials {
+    padding: 0.5em 0 2.5em;
+  }
+
+  .myCarousel h4 {
+    font-size: 15px;
+  }
+
+  .myCarousel h5 {
+    font-size: 13px;
+  }
+
+  .carousel .slide .testimonial-company {
+    width: 80px;
+    margin-bottom: 1em;
+  }
+  .carousel .slide .testimonial-person {
+    margin-top: 2em;
+  }
+
+  .myCarousel p {
+    font-size: 20px;
+  }
+
+  .experience {
+    height: 80vh;
+  }
+
+  .experience-info h3 {
+    font-size: 23px;
+  }
+
+  .experience-contact {
+    font-size: 18px;
+  }
+
+  .experience-word {
+    width: 60%;
+  }
+
+  .footer-info {
+    padding: 4em 0;
+    gap: 0.4em;
+  }
+
+  .footer-info div {
+    padding: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  body {
+    background: aqua;
+  }
+
+  .carousel .slide {
+    padding-bottom: 3em;
+    /* background: maroon !important; */
+  }
+
+  .carousel .slide .testimonial-company {
+    margin-top: 3em;
+    width: 90px !important;
+  }
+
+  .myCarousel {
+    border: none;
+    background: transparent !important;
+    height: 500px;
+  }
+
+  .special-item-wrap {
+    gap: 0;
+  }
+
+  .special-item {
+    height: 330px;
+  }
+
+  .special-item .subTitle {
+    font-size: 13px;
+  }
+
+  .special-item .title {
+    font-size: 22px;
+  }
+
+  .special-item div {
+    padding: 2em 1em;
+  }
+
+  .special-gold {
+    height: 330px;
+  }
+
+  .special-gold div h6 {
+    font-size: 12px;
+  }
+
+  .special-gold div h3 {
+    font-size: 22px;
+    margin-bottom: 0.5em;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-info {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .special-gold,
+  .special-item {
+    height: 350px;
+  }
+
+  .special-gold div {
+    padding: 1em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background: blue;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .btn-primary {
+    font-size: 10px;
+  }
+
+  .top-phone,
+  .top-address {
+    font-size: 13px;
+  }
+
+  nav {
+    padding: 1em 0;
+  }
+
+  .defaultHero,
+  .roomsHero {
+    height: 500px !important;
+  }
+
+  .banner p {
+    font-size: 20px;
+  }
+
+  .special-item-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-info {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-info div {
+    padding: 1.5em;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-title h6 {
+    font-size: 10px !important;
+  }
+
+  .section-title h1 {
+    font-size: 34px;
+  }
+
+  #welcome {
+    padding: 2em 0;
+  }
+
+  .welcome-img img {
+    width: 100%;
+  }
+
+  .services-grid {
+    margin-top: 2em;
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+  }
+
+  .service:nth-child(odd) {
+    background: var(--white);
+  }
+
+  .orange-ball {
+    display: none;
+  }
+
+  .service .service-icon i {
+    animation: heartbeat 2s infinite;
+    color: #e6a54a;
+  }
+
+  .myCarousel {
+    width: 100% !important;
+  }
+
+  .myCarousel p {
+    font-size: 18px;
+    line-height: 28px !important;
+  }
+
+  .carousel .slide {
+    padding-bottom: 1.5em;
+    height: 450px;
+  }
+
+  .carousel .slide .testimonial-company {
+    margin-top: 2em;
+  }
+
+  .myCarousel {
+    border: none;
+    background: transparent !important;
+    height: 500px;
+  }
+
+  .footer-info {
+    grid-template-columns: 1fr;
+  }
+
+  .icons-wrap {
+    justify-content: space-around;
+  }
+
+  .icons-wrap i {
+    font-size: 22px;
+  }
+}

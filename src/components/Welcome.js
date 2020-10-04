@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "./Title";
 import welcomeImg from "../images/welcome.png";
+import { Link } from "react-router-dom";
 
 function Welcome() {
   return (
@@ -15,6 +16,9 @@ function Welcome() {
             the New York lifestyle in the Conrad Suite, featuring an office and
             separate living and dining areas.
           </p>
+          <Link to="#" className="btn-primary btn-welcome">
+            Read More <i className="fas fa-long-arrow-alt-right"></i>
+          </Link>
         </div>
         <div className="welcome-img">
           <img src={welcomeImg} alt="welcome to erios" />

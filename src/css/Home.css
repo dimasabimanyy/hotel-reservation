@@ -18,10 +18,20 @@
 .welcome-info p {
   margin-top: 2em;
   line-height: 2em;
+  margin-bottom: 3.5em;
 }
 
 .welcome-img img {
   width: 100%;
+}
+
+.btn-welcome {
+  color: var(--white);
+  background: var(--primaryColor);
+}
+
+.btn-welcome:hover {
+  background-color: #dd9836;
 }
 
 /* Featured Special Section */
@@ -91,7 +101,7 @@
 
 /* The Transformation */
 .zoom-n-rotate:hover img {
-  transform: scale(1.4) rotate(25deg);
+  transform: scale(1.4) rotate(20deg);
 }
 
 .special-gold {
@@ -378,6 +388,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 .experience-bg {
@@ -425,7 +436,7 @@
 /* Testimonials section */
 
 .testimonials {
-  padding: 3em 0 4.5em;
+  padding: 1em 0 4.5em;
   background: var(--grayBg);
   border-top: 1px solid rgba(160, 160, 160, 0.4);
 }
