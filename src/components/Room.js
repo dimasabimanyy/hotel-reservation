@@ -24,7 +24,7 @@ export default function Room({ room }) {
           <h4>{name}</h4>
         </Link>
         <div className="room-additional-info">
-          <p className="room-size">{size} SQ</p>|
+          <p className="room-size-single">{size} SQ</p>|
           <p className="room-type">{type}</p>
         </div>
       </div>

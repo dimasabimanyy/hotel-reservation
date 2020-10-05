@@ -248,7 +248,7 @@
   opacity: 1;
 }
 
-.room-size {
+.room-size-single {
   font-family: var(--dmSans);
   margin-right: 7px;
   font-size: 15px;

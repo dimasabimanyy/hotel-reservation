@@ -12,7 +12,7 @@ function RoomsList({ rooms }) {
 
   return (
     <section className="roomslist">
-      <div className="roomslist-center">
+      <div className="roomslist-center roomslist-container">
         {rooms.map((item) => {
           return <Room key={item.id} room={item} />;
         })}

@@ -1,8 +1,4 @@
 @media only screen and (max-width: 1300px) {
-  body {
-    background-color: lightblue;
-  }
-
   .container {
     width: 95%;
   }
@@ -10,11 +6,46 @@
   .footer-container {
     width: 95%;
   }
+
+  .roomslist-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .filter-form {
+    flex-grow: 1;
+  }
+
+  .break-pet {
+    display: flex;
+    margin-top: 4em;
+  }
+
+  .breakfast {
+    margin-right: 1.5em;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 1123px) {
+  .room-size {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: 726px) {
+  .price {
+    margin-top: 2em;
+  }
 }
 
 @media only screen and (max-width: 1050px) {
-  body {
-    background-color: maroon;
+  .room-info {
+    padding: 2em;
+  }
+
+  .room-info h4 {
+    font-size: 19px;
   }
 
   .section-title h6 {
@@ -136,8 +167,12 @@
 }
 
 @media only screen and (max-width: 950px) {
-  body {
-    background: aqua;
+  .roomslist-center {
+    gap: 1em;
+  }
+
+  .img-container {
+    height: 230px !important;
   }
 
   .carousel .slide {
@@ -189,6 +224,15 @@
     margin-bottom: 0.5em;
   }
 
+  .special-gold,
+  .special-item {
+    height: 350px;
+  }
+
+  .special-gold div {
+    padding: 1em;
+  }
+
   .services-grid {
     grid-template-columns: 1fr 1fr;
     row-gap: 0;
@@ -203,24 +247,26 @@
   }
 }
 
-@media only screen and (max-width: 950px) {
-  .special-gold,
-  .special-item {
-    height: 350px;
-  }
-
-  .special-gold div {
-    padding: 1em;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  body {
-    background: blue;
+@media only screen and (max-width: 850px) {
+  .roomslist-center {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media only screen and (max-width: 690px) {
+  .price,
+  .room-size {
+    margin-top: 1em;
+  }
+
+  .break-pet {
+    margin-top: 1.4em;
+  }
+
+  .roomslist-center {
+    grid-template-columns: 1fr;
+  }
+
   .btn-primary {
     font-size: 10px;
   }

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import logo from "../images/logo_light.svg";
-import { FaAlignRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
@@ -22,7 +21,7 @@ export default class Navbar extends Component {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/rooms">
               <h6>Rooms</h6>
             </Link>
           </li>

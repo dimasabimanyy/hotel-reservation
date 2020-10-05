@@ -80,6 +80,11 @@ h6 {
   margin: 0 auto;
 }
 
+.roomslist-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* Button style */
 .btn-primary {
   text-align: center;
@@ -207,22 +212,30 @@ nav {
 
 .defaultHero,
 .roomsHero {
-  height: 800px;
-  background: url("../images/home.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.defaultHero {
+  background: url("../images/home.jpg") center/cover no-repeat;
+  height: 800px;
+}
+
 .roomsHero {
-  background-image: url("../images/home.jpg");
-  min-height: 60vh;
+  background-image: url("../images/rooms-breadcrumbs.jpg");
+  height: 500px;
 }
 
 /* Banner */
 
 .banner {
   text-align: center;
+}
+
+.banner h1 {
+  color: var(--white);
+  font-size: 3.3em;
 }
 
 .banner p {
@@ -248,14 +261,12 @@ footer {
 .footer-info {
   padding: 4em 0;
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1em;
 }
 
 .footer-info div {
   padding: 1em;
-  /* background: maroon; */
 }
 
 .footer-info div h6 {

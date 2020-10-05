@@ -9,12 +9,11 @@ export const Rooms = () => {
     <React.Fragment>
       <Hero hero="roomsHero">
         <Banner title="Our Rooms">
-          <Link to="/" className="btn-primary">
-            Return Home
+          <Link to="/" className="btn-primary to-home-room">
+            Back to Home
           </Link>
         </Banner>
       </Hero>
-
       <RoomsContainer></RoomsContainer>
     </React.Fragment>
   );

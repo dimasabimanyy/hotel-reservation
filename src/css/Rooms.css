@@ -1,0 +1,87 @@
+.to-home-room {
+  color: white;
+  background-color: var(--primaryColor);
+}
+
+.to-home-room:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Rooms Filter */
+
+.filter-container {
+  background: var(--grayBg);
+  padding: 5em 0 3em;
+}
+
+.filter-form {
+  margin-top: 2.5em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  text-align: center;
+}
+
+.form-group label {
+  font-size: 20px;
+  color: #222;
+  font-family: var(--dmSans);
+}
+
+.form-control {
+  width: 100%;
+  padding: 5px 10px;
+  margin-top: 0.8em;
+}
+
+.guests {
+  padding: 8px 10px;
+}
+
+.size-inputs {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.size-inputs input {
+  padding: 5px 10px;
+}
+
+.single-extra {
+  text-align: left;
+}
+
+.single-extra input {
+  margin-right: 0.5em;
+}
+
+.breakfast {
+  margin-top: 1.8em;
+}
+
+/* Rooms list container -> rooms page */
+
+.empty-search {
+  background-color: var(--grayBg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roomslist {
+  background-color: var(--grayBg);
+  padding-bottom: 5em;
+}
+
+.roomslist-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+}
