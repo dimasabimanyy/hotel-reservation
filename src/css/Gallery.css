@@ -1,0 +1,88 @@
+.gallery {
+  background-color: var(--grayBg);
+  padding: 8em 0;
+  text-align: center;
+}
+
+.gallery-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5em;
+  margin-bottom: 5em;
+}
+
+.single-img {
+  height: 300px;
+}
+
+.single-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sign-up-gallery {
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+.sign-up-gallery i {
+  margin-left: 5px;
+}
+
+.sign-up-gallery:hover {
+  background-color: #dd9836;
+}
+
+.single-img {
+  background: -moz-linear-gradient(
+    -45deg,
+    #000000 0%,
+    #000000 25%,
+    #1e539e 50%,
+    #dd9836 75%,
+    #dd9836 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    hsl(0, 0%, 0%) 0%,
+    #000000 25%,
+    #1e539e 50%,
+    #dd9836 75%,
+    #dd9836 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #000000 0%,
+    #000000 25%,
+    #1e539e 50%,
+    #dd9836 75%,
+    #dd9836 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.single-img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 1;
+  mix-blend-mode: screen;
+  transition: 0.5s all;
+}
+
+.single-img:hover {
+  background-position: 100% 100%;
+}

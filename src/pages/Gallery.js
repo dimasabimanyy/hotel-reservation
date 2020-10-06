@@ -3,18 +3,15 @@ import Hero from "../components/Hero";
 import { Banner } from "../components/Banner";
 import { Link } from "react-router-dom";
 import RoomsContainer from "../components/RoomsContainer";
+import GalleryContainer from "../components/GalleryContainer";
 
-export const Rooms = () => {
+export const Gallery = () => {
   return (
     <React.Fragment>
       <Hero hero="roomsHero">
-        <Banner title="Gallery">
-          {/* <Link to="/" className="btn-primary to-home-room">
-            Back to Home
-          </Link> */}
-        </Banner>
+        <Banner title="Gallery"></Banner>
       </Hero>
-      <RoomsContainer></RoomsContainer>
+      <GalleryContainer />
     </React.Fragment>
   );
 };

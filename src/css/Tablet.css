@@ -164,6 +164,12 @@
   .footer-info div {
     padding: 0.5em;
   }
+
+  /* Gallery page */
+
+  .single-img {
+    height: 250px;
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -245,11 +251,27 @@
   .footer-info {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  /* Gallery pages */
+
+  .gallery-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (max-width: 850px) {
   .roomslist-center {
     grid-template-columns: 1fr 1fr;
+  }
+
+  /* Gallery pages */
+
+  .gallery {
+    padding: 4em 0;
+  }
+
+  .gallery-wrap {
+    margin-bottom: 3em;
   }
 }
 
@@ -300,6 +322,20 @@
   .footer-info div {
     padding: 1.5em;
     text-align: center;
+  }
+
+  /* Gallery pages */
+
+  .gallery {
+    padding: 4em 0;
+  }
+
+  .gallery-wrap {
+    margin-bottom: 3em;
+  }
+
+  .gallery-wrap {
+    grid-template-columns: 1fr;
   }
 }
 
