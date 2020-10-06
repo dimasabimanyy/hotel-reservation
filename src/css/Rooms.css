@@ -12,7 +12,7 @@
 
 .filter-container {
   background: var(--grayBg);
-  padding: 3em 0 3em;
+  padding: 5em 0 3em;
 }
 
 .filter-form {
@@ -64,6 +64,10 @@
     grid-template-columns: 1fr;
     width: 80%;
     margin: 0 auto;
+  }
+
+  .filter-container {
+    padding: 2em 0 3em;
   }
 }
 
