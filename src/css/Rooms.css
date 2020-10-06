@@ -26,31 +26,41 @@
   text-align: center;
 }
 
+.form-group select,
+.form-group input {
+  background-color: #f3f3f0;
+  border-radius: 3px;
+  border: 1px solid rgb(187, 187, 187);
+}
+
 .form-group label {
-  font-size: 20px;
+  font-size: 13px;
+  letter-spacing: 1px;
   color: #222;
+  font-weight: 600;
+  text-transform: uppercase;
   font-family: var(--dmSans);
 }
 
 .form-control {
   width: 100%;
-  padding: 5px 10px;
-  margin-top: 0.8em;
-}
-
-.guests {
-  padding: 8px 10px;
+  outline: none;
+  height: 30px;
+  padding: 0 8px;
+  margin-top: 10px;
 }
 
 .size-inputs {
-  margin-top: 1em;
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
 }
 
 .size-inputs input {
-  padding: 5px 10px;
+  outline: none;
+  height: 30px;
+  padding: 0 8px;
 }
 
 .single-extra {

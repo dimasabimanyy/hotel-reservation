@@ -52,7 +52,7 @@ function RoomsFilter({ rooms }) {
   return (
     <section className="filter-container">
       <div className="filter-container-wrap container">
-        <Title title="Find Your Rooms" />
+        {/* <Title title="Find Your Rooms" /> */}
         <form className="filter-form">
           {/* select type */}
           <div className="form-group">

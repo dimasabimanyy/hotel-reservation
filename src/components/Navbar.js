@@ -33,12 +33,12 @@ export default class Navbar extends Component {
         </div>
         <ul className="nav-right">
           <li>
-            <Link to="/">
+            <Link to="/gallery">
               <h6>Gallery</h6>
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/contact">
               <h6>Contact</h6>
             </Link>
           </li>
