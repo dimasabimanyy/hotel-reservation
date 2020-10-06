@@ -170,6 +170,25 @@
   .single-img {
     height: 250px;
   }
+
+  /* Contact pages */
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-info-left h1 {
+    font-size: 37px;
+  }
+
+  .contact-info-left {
+    width: 100%;
+  }
+
+  .contact-info-right {
+    margin-top: 2em;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -183,7 +202,6 @@
 
   .carousel .slide {
     padding-bottom: 3em;
-    /* background: maroon !important; */
   }
 
   .carousel .slide .testimonial-company {
@@ -257,6 +275,10 @@
   .gallery-wrap {
     grid-template-columns: 1fr 1fr;
   }
+
+  .form-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -272,6 +294,39 @@
 
   .gallery-wrap {
     margin-bottom: 3em;
+  }
+
+  /* Contact pages */
+
+  .contact-info-right {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2em;
+  }
+
+  .box-info:nth-child(2) {
+    border: none;
+  }
+
+  /* Contact */
+
+  .contact-info {
+    padding: 3em 0;
+  }
+
+  .contact-info-left h1 {
+    font-size: 30px;
+  }
+
+  .form-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-section {
+    padding-bottom: 3em;
+  }
+
+  .mapouter {
+    height: 500px;
   }
 }
 
@@ -336,6 +391,18 @@
 
   .gallery-wrap {
     grid-template-columns: 1fr;
+  }
+
+  /* Contact */
+  .contact-info-right {
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .box-info {
+    text-align: center;
+    gap: 0;
+    /* background: maroon; */
   }
 }
 
