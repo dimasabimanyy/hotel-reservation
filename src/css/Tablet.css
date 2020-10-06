@@ -15,22 +15,6 @@
   .filter-form {
     flex-grow: 1;
   }
-
-  .break-pet {
-    display: flex;
-    margin-top: 4em;
-  }
-
-  .breakfast {
-    margin-right: 1.5em;
-    margin-top: 0;
-  }
-}
-
-@media only screen and (max-width: 1123px) {
-  .room-size {
-    margin-top: 2em;
-  }
 }
 
 @media only screen and (max-width: 726px) {
@@ -394,6 +378,11 @@
   }
 
   /* Contact */
+
+  .contact-info-left {
+    padding: 0 1em;
+  }
+
   .contact-info-right {
     gap: 0;
     grid-template-columns: 1fr;

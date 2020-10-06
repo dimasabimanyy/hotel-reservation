@@ -12,7 +12,7 @@ function ContactForm() {
             If you have any question, please don't hesitate to send us any
             message.
           </p>
-          <form>
+          <form className="form-contact">
             <div>
               <input placeholder="Your Name" type="text" />
             </div>

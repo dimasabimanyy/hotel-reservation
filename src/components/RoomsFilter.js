@@ -52,7 +52,6 @@ function RoomsFilter({ rooms }) {
   return (
     <section className="filter-container">
       <div className="filter-container-wrap container">
-        {/* <Title title="Find Your Rooms" /> */}
         <form className="filter-form">
           {/* select type */}
           <div className="form-group">
@@ -61,7 +60,7 @@ function RoomsFilter({ rooms }) {
               name="type"
               id="type"
               value={type}
-              className="form-control room-type"
+              className="form-control"
               onChange={handleChange}
             >
               {types}
@@ -122,25 +121,28 @@ function RoomsFilter({ rooms }) {
           {/* end of size */}
           {/* extras */}
           <div className="form-group break-pet">
-            <div className="single-extra breakfast">
-              <input
-                type="checkbox"
-                name="breakfast"
-                id="breakfast"
-                checked={breakfast}
-                onChange={handleChange}
-              />
-              <label htmlFor="breakfast">Breakfast</label>
-            </div>
-            <div className="single-extra pet">
-              <input
-                type="checkbox"
-                name="pets"
-                id="pets"
-                checked={pets}
-                onChange={handleChange}
-              />
-              <label htmlFor="pets">Pets</label>
+            <label htmlFor="extra">Extra</label>
+            <div className="extra">
+              <div className="single-extra breakfast">
+                <input
+                  type="checkbox"
+                  name="breakfast"
+                  id="breakfast"
+                  checked={breakfast}
+                  onChange={handleChange}
+                />
+                <label htmlFor="breakfast">Breakfast</label>
+              </div>
+              <div className="single-extra pet">
+                <input
+                  type="checkbox"
+                  name="pets"
+                  id="pets"
+                  checked={pets}
+                  onChange={handleChange}
+                />
+                <label htmlFor="pets">Pets</label>
+              </div>
             </div>
           </div>
           {/* end of extras */}

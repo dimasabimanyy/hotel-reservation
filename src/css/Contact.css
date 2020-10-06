@@ -93,17 +93,17 @@
   margin-top: 1em;
 }
 
-form {
+.form-contact {
   width: 100%;
   margin-top: 1em;
 }
 
-form div {
+.form-contact div {
   width: 100%;
 }
 
-form input,
-form textarea {
+.form-contact input,
+.form-contact textarea {
   padding: 1.4em 0;
   width: 100%;
   border: none;
