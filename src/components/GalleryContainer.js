@@ -5,7 +5,7 @@ import Loading from "./Loading";
 import { Link } from "react-router-dom";
 
 function GalleryContainer({ context }) {
-  const { loading, sortedRooms, rooms } = context;
+  const { loading, rooms } = context;
 
   if (rooms.length === 0) {
     return (

@@ -1,0 +1,128 @@
+.contact {
+  background: var(--grayBg);
+  width: 100%;
+}
+
+/* Contact info */
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 5em 0;
+}
+
+.contact-info-left {
+  width: 28%;
+}
+
+.contact-info-right {
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-info-left h1 {
+  margin-bottom: 15px;
+}
+
+.contact-info-left p {
+  line-height: 28px;
+}
+
+.box-info {
+  /* background-color: maroon; */
+  padding: 1em 2em;
+}
+
+.box-info:nth-child(2) {
+  /* background-color: maroon; */
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.box-info div i {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.box-info h5 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.box-info div p {
+  line-height: 30px;
+}
+
+.contact-form-section {
+  background-color: var(--grayBg);
+  padding-bottom: 7em;
+}
+
+.form-wrap {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: white;
+}
+
+/* Map */
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
+
+/* Form */
+
+.form {
+  padding: 4em;
+}
+
+.form p {
+  margin-top: 1em;
+}
+
+form {
+  width: 100%;
+  margin-top: 1em;
+}
+
+form div {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  padding: 1.4em 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-family: var(--ptSerif);
+  font-size: 16px;
+  outline: none;
+}
+
+.msg-field {
+  margin-bottom: 3em;
+}
+
+.send-message {
+  background: var(--primaryColor);
+  color: white;
+}
+
+.send-message:hover {
+  color: #fff;
+  background: #000;
+}

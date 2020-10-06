@@ -8,6 +8,7 @@ import "./css/Tablet.css";
 import { Home } from "./pages/Home";
 import { Rooms } from "./pages/Rooms";
 import { Gallery } from "./pages/Gallery";
+import { Contact } from "./pages/Contact";
 import SingleRoom from "./pages/SingleRoom";
 import Error from "./pages/Error";
 import { Switch, Route } from "react-router-dom";
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/rooms/" component={Rooms} />
         <Route exact path="/rooms/:slug" component={SingleRoom} />
         <Route exact path="/gallery/" component={Gallery} />
+        <Route exact path="/contact/" component={Contact} />
         <Route component={Error} />
       </Switch>
       <Footer />
