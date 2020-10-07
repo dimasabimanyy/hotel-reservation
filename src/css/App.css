@@ -198,6 +198,7 @@ h6 {
 .banner h1 {
   color: var(--white);
   font-size: 3.3em;
+  text-transform: capitalize;
 }
 
 .banner p {

@@ -4,6 +4,7 @@ import { Banner } from "../components/Banner";
 import defaultBcg from "../images/room-1.jpg";
 import { RoomContext } from "../context";
 import StyledHero from "../components/StyledHero";
+import "../css/SingleRoom.css";
 
 export default class SingleRoom extends Component {
   constructor(props) {
@@ -25,8 +26,8 @@ export default class SingleRoom extends Component {
 
     if (!room) {
       return (
-        <div className="error">
-          <h3>no such room could be found</h3>
+        <div className="error-rooms">
+          <h3>No such room could be found</h3>
           <Link to="/rooms" className="btn-primary">
             Back to rooms
           </Link>
@@ -53,7 +54,7 @@ export default class SingleRoom extends Component {
       <React.Fragment>
         <StyledHero img={mainImg || this.state.defaultBcg}>
           <Banner title={`${room.name} room`}>
-            <Link to="/rooms" className="btn-primary">
+            <Link to="/rooms" className="btn-primary single-room">
               Back to rooms
             </Link>
           </Banner>
