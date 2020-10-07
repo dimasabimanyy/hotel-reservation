@@ -3,6 +3,11 @@
   color: white;
 }
 
+.single-room:hover {
+  background-color: white;
+  color: #000;
+}
+
 #single-room-page {
   background-color: var(--grayBg);
 }
@@ -137,4 +142,32 @@
 
 .other-rooms-title {
   text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  #single-room-section {
+    grid-template-columns: 60% 40%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #single-room-section {
+    grid-template-columns: 1fr;
+  }
+
+  .single-room-img-piece {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+  }
+
+  .other-rooms-title {
+    font-size: 37px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .single-room-img-piece {
+    grid-template-columns: 1fr;
+  }
 }
