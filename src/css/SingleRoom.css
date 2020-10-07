@@ -2,3 +2,139 @@
   background-color: var(--primaryColor);
   color: white;
 }
+
+#single-room-page {
+  background-color: var(--grayBg);
+}
+
+#single-room-section {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 1em;
+  padding: 4em 0 5em;
+  border-bottom: 1px solid #ccc;
+}
+
+.single-room-big {
+  margin-bottom: 0.5em;
+}
+
+.single-room-big img {
+  width: 100%;
+}
+
+.single-room-img-piece {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5em;
+}
+
+.single-room-img-piece img {
+  width: 100%;
+}
+
+.s-room-desc {
+  margin: 1.5em 0;
+}
+
+.s-room-desc h4 {
+  font-size: 24px;
+}
+
+.s-orange-line {
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  width: 135px;
+  height: 4px;
+  background-color: var(--primaryColor);
+  position: relative;
+}
+
+.s-room-desc div p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* Right single room */
+
+.s-room-price {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.s-room-price p {
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.s-room-price span {
+  color: var(--primaryColor);
+  font-style: normal;
+  font-size: 60px;
+}
+
+/* Additional info */
+
+.s-additional-info {
+  margin-top: 2em;
+  padding: 3em 2em;
+  border: 2px solid #ccc;
+  border-top: 4px solid var(--primaryColor) !important;
+}
+
+.s-additional-info h5 {
+  margin-bottom: 0.7em;
+  font-size: 22px;
+}
+
+.s-gray-line {
+  width: 100%;
+  background-color: #ccc;
+  height: 1px;
+  opacity: 0.7;
+  margin-bottom: 1em;
+}
+
+.s-additional-info-list li {
+  margin: 7px 0;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.direct-reservation {
+  background-color: #333239;
+  padding: 4em 3em;
+  margin-top: 2em;
+}
+
+.direct-reservation h3 {
+  color: white;
+  font-size: 24px;
+}
+
+.direct-reservation div {
+  display: flex;
+  align-items: center;
+  margin-top: 1.6em;
+}
+
+.direct-reservation div i {
+  color: var(--primaryColor);
+  font-size: 35px;
+  margin-right: 12px;
+}
+
+.direct-reservation div h5 {
+  color: white;
+  font-size: 17px;
+}
+
+/* Single featured rooms component style */
+
+.other-rooms-title {
+  text-align: center;
+}

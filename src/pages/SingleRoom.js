@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Banner } from "../components/Banner";
+import SingleFeaturedRooms from "../components/SingleFeaturedRooms";
 import defaultBcg from "../images/room-1.jpg";
 import { RoomContext } from "../context";
 import StyledHero from "../components/StyledHero";
@@ -51,7 +52,7 @@ export default class SingleRoom extends Component {
     const [mainImg, ...defaultImg] = images;
 
     return (
-      <React.Fragment>
+      <section id="single-room-page">
         <StyledHero img={mainImg || this.state.defaultBcg}>
           <Banner title={`${room.name} room`}>
             <Link to="/rooms" className="btn-primary single-room">
@@ -59,7 +60,72 @@ export default class SingleRoom extends Component {
             </Link>
           </Banner>
         </StyledHero>
-        <section className="single-room">
+
+        <section id="single-room-section" className="container">
+          <section className="left-single-room">
+            <div className="single-room-img-wrap">
+              <div className="single-room-big">
+                <img src={mainImg} alt={room.name} />
+              </div>
+              <div className="single-room-img-piece">
+                {defaultImg.map((image, index) => {
+                  return <img key={index} src={image} alt={name} />;
+                })}
+              </div>
+              <div className="s-room-desc">
+                <h4>Description</h4>
+                <div className="s-orange-line"></div>
+                <div>
+                  <p>{description}</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="right-single-room">
+            <div className="s-room-price">
+              <p>
+                from <div></div>
+                <span>${price}</span>/night
+              </p>
+              <Link to="/rooms" className="btn-primary single-room">
+                Check availability this room
+              </Link>
+            </div>
+
+            <div className="s-additional-info">
+              <h5>Additional Information</h5>
+              <div className="s-gray-line"></div>
+              <ul className="s-additional-info-list">
+                <li>Size : {size} SQF</li>
+                <li>
+                  Max capacity :
+                  {capacity > 1 ? `${capacity} people` : `${capacity} person`}
+                </li>
+                <li>{pets ? "Pets Allowed" : "No Pets Allowed"}</li>
+                <li>{breakfast && "Free Breakfast Included"}</li>
+                {extras.map((item, index) => {
+                  return <li key={index}>{item}</li>;
+                })}
+              </ul>
+            </div>
+
+            <div className="direct-reservation">
+              <h3>Direct Reservation</h3>
+              <div>
+                <i class="fas fa-phone-volume"></i>
+                <h5>+844 3450 33 11</h5>
+              </div>
+              <div>
+                <i class="far fa-envelope-open"></i>
+                <h5>book@erios.com</h5>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <SingleFeaturedRooms />
+        {/* <section className="single-room">
           <div className="single-room-images">
             {defaultImg.map((image, index) => {
               return <img key={index} src={image} alt={name} />;
@@ -82,16 +148,16 @@ export default class SingleRoom extends Component {
               <h6>{breakfast && "free breakfast included"}</h6>
             </article>
           </div>
-        </section>
-        <section className="room-extras">
+        </section> */}
+        {/* <section className="room-extras">
           <h6>Extras</h6>
           <ul className="extras">
             {extras.map((item, index) => {
               return <li key={index}>{item}</li>;
             })}
           </ul>
-        </section>
-      </React.Fragment>
+        </section> */}
+      </section>
     );
   }
 }
