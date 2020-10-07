@@ -337,10 +337,6 @@
     font-size: 13px;
   }
 
-  nav {
-    padding: 1em 0;
-  }
-
   .defaultHero,
   .roomsHero {
     height: 500px !important;

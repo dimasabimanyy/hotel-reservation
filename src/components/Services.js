@@ -6,25 +6,25 @@ class Services extends Component {
   state = {
     services: [
       {
-        icon: <i class="far fa-paper-plane"></i>,
+        icon: <i className="far fa-paper-plane"></i>,
         title: "Pick Up & Drop",
         info: "We'll pick up from airport while you comfy on your ride.",
         slug: "/",
       },
       {
-        icon: <i class="fas fa-car-alt"></i>,
+        icon: <i className="fas fa-car-alt"></i>,
         title: "Parking Space",
         info: "Please consider your private parking or better yet.",
         slug: "/",
       },
       {
-        icon: <i class="fas fa-glass-martini-alt"></i>,
+        icon: <i className="fas fa-glass-martini-alt"></i>,
         title: "Welcome Drink​",
         info: "We have the fuel to start your day right.",
         slug: "/",
       },
       {
-        icon: <i class="fas fa-bath"></i>,
+        icon: <i className="fas fa-bath"></i>,
         title: "Hot & Cold Water",
         info: "Let us know if you need anything to be more comfortable",
         slug: "/",
