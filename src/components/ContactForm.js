@@ -26,7 +26,7 @@ function ContactForm() {
               <textarea placeholder="Here goes your message.."></textarea>
             </div>
             <div>
-              <Link to="/rooms" className="btn-primary send-message">
+              <Link to="#" className="btn-primary send-message">
                 Send Message <i className="fas fa-long-arrow-alt-right"></i>
               </Link>
             </div>

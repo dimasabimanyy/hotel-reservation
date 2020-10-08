@@ -50,7 +50,11 @@ export default class Navbar extends Component {
         </ul>
 
         <div className="menu-toggle">
-          <input type="checkbox" onClick={this.handleToggle} />
+          <input
+            type="checkbox"
+            onClick={this.handleToggle}
+            className="navbarCheckbox"
+          />
           <span></span>
           <span></span>
           <span></span>

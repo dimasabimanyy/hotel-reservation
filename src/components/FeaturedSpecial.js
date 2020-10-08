@@ -31,7 +31,7 @@ function FeaturedSpecial() {
                 Start your day with ourt $5 Breakfast on the go package at
                 central market
               </p>
-              <Link to="/rooms" className="btn-primary to-special-featured">
+              <Link to="#" className="btn-primary to-special-featured">
                 Learn More <i className="fas fa-long-arrow-alt-right"></i>
               </Link>
             </div>

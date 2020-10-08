@@ -26,7 +26,7 @@ function GalleryContainer({ context }) {
           return <ImageGallery key={item.id} room={item} />;
         })}
       </div>
-      <Link to="/" className="btn-primary sign-up-gallery">
+      <Link to="#" className="btn-primary sign-up-gallery">
         Sign me up <i className="fas fa-long-arrow-alt-right"></i>
       </Link>
     </section>

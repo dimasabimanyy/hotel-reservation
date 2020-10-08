@@ -1,13 +1,17 @@
 import React from "react";
 import footerLogo from "../images/logo_dark.svg";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <footer>
       <div className="footer-info footer-container">
         <div className="footer-logo">
-          <img src={footerLogo} alt="logo" />
+          <Link to="/">
+            <img src={footerLogo} alt="logo" />
+          </Link>
         </div>
+
         <div className="address">
           <h6>ADDRESS</h6>
           <p>736 Blue Spring Ave. Smithtown, NY 11787</p>

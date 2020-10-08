@@ -14,7 +14,7 @@ function Experience() {
           Call us on <span>(+844) 1800 3377</span> or Email us
           <span> services@erios.com</span>
         </p>
-        <Link to="/rooms" className="btn-primary btn-experience">
+        <Link to="#" className="btn-primary btn-experience">
           Join Us Now <i className="fas fa-long-arrow-alt-right"></i>
         </Link>
       </div>

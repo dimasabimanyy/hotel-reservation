@@ -265,6 +265,10 @@ footer {
   color: #f0f0f0;
 }
 
+.social-footer a i:hover {
+  color: var(--primaryColor);
+}
+
 .copyright {
   padding: 4em 0;
   text-align: center;
