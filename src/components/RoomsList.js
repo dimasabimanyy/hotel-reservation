@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Room from "./Room";
 
-function RoomsList({ rooms }) {
+function RoomsList({ rooms, aosType, aosDuration }) {
+
   if (rooms.length === 0) {
     return (
       <div className="empty-search">
@@ -14,7 +15,7 @@ function RoomsList({ rooms }) {
     <section className="roomslist">
       <div className="roomslist-center roomslist-container">
         {rooms.map((item) => {
-          return <Room key={item.id} room={item} />;
+          return <Room key={item.id} room={item} aosType={aosType} aosDuration={aosDuration}/>;
         })}
       </div>
     </section>

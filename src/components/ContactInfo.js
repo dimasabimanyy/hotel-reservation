@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function ContactInfo() {
-  const [info, setInfo] = useState([
+  const [info] = useState([
     {
       key: 1,
       icon: <i className="fas fa-phone"></i>,

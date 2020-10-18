@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-export default function Room({ room }) {
+export default function Room({ room, aosType, aosDuration, aosOnce }) {
   const { name, slug, images } = room;
+
+  useEffect(() => {
+    Aos.init()
+  }, [])
+
   return (
-    <div className="single-img">
+    <div className="single-img" data-aos={aosType} data-aos-duration={aosDuration} data-aos-once={aosOnce}>
       <Link to={`rooms/${slug}`}>
         <img src={images[0]} alt={name} />
       </Link>

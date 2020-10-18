@@ -167,7 +167,7 @@
 
 import React, { Component } from "react";
 import items from "./data";
-import Client from "./Contentful";
+// import Client from "./Contentful";
 
 const RoomContext = React.createContext();
 
@@ -253,7 +253,7 @@ export default class RoomProvider extends Component {
     const target = event.target;
     const value = target.type === "checkbox" ? target.checked : target.value;
     const name = target.name;
-    console.log(name, value);
+    // console.log(name, value);
 
     this.setState(
       {

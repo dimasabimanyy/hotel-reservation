@@ -1,30 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import footerLogo from "../images/logo_dark.svg";
 import { Link } from "react-router-dom";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 function Footer() {
+
+  useEffect(() => {
+    Aos.init()
+  }, [])
+
   return (
     <footer>
       <div className="footer-info footer-container">
-        <div className="footer-logo">
+        <div className="footer-logo" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false" data-aos-delay="0">
           <Link to="/">
             <img src={footerLogo} alt="logo" />
           </Link>
         </div>
 
-        <div className="address">
+        <div className="address"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="false" data-aos-delay="200">
           <h6>ADDRESS</h6>
           <p>736 Blue Spring Ave. Smithtown, NY 11787</p>
         </div>
-        <div className="phone">
+        <div className="phone" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false" data-aos-delay="400">
           <h6>PHONE</h6>
           <p>(+844) 1800 3377</p>
         </div>
-        <div className="reservations">
+        <div className="reservations" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false" data-aos-delay="600">
           <h6>RESERVATIONS</h6>
           <p>(+844) 1800 3355 support@example.com</p>
         </div>
-        <div className="social-footer">
+        <div className="social-footer" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false" data-aos-delay="800">
           <h6>FOLLOW US</h6>
           <div className="icons-wrap">
             <a href="https://instagram.com">
