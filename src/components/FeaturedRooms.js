@@ -4,15 +4,15 @@ import Loading from "./Loading";
 import Room from "./Room";
 import Title from "./Title";
 import Carousel from "react-elastic-carousel";
-import Aos from 'aos';
-import "aos/dist/aos.css"
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default class FeaturedRooms extends Component {
   static contextType = RoomContext;
 
-  constructor(props){
+  constructor(props) {
     super(props);
-    Aos.init()
+    Aos.init();
   }
 
   render() {
@@ -32,8 +32,17 @@ export default class FeaturedRooms extends Component {
     return (
       <section className="featured-rooms">
         <div className="featured-wrap container">
-          <Title title="Rooms & Suites" subTitle="Discover" aosType="fade-in" aosDuration="1000"/>
-          <div className="featured-rooms-carousel" data-aos="fade-up" data-aos-duration="1000">
+          <Title
+            title="Rooms & Suites"
+            subTitle="Discover"
+            aosType="fade-in"
+            aosDuration="1000"
+          />
+          <div
+            className="featured-rooms-carousel"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             {loading ? (
               <Loading />
             ) : (

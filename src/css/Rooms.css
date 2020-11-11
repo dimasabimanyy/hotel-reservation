@@ -1,3 +1,7 @@
+.featured-rooms .room {
+  margin: 0 1em !important;
+}
+
 .to-home-room {
   color: white;
   background-color: var(--primaryColor);
