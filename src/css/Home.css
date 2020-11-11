@@ -3,6 +3,7 @@
 #welcome {
   background: #edebe5;
   padding: 8em 0;
+  overflow-x: hidden;
 }
 
 .welcome-wrap {

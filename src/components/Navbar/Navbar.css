@@ -50,8 +50,10 @@ nav ul li h6:hover {
   position: absolute;
   left: -4px;
   top: -5px;
-  opacity: 0;
+  opacity: 1;
   cursor: pointer;
+  z-index: 999;
+  opacity: 0;
 }
 
 input.navbarCheckbox {
@@ -88,7 +90,7 @@ input.navbarCheckbox {
 }
 
 .menu-toggle input:checked ~ span:nth-child(3) {
-  opacity: 0;
+  opacity: 1;
   transform: scale(0);
 }
 
@@ -122,20 +124,22 @@ input.navbarCheckbox {
   }
 
   nav ul {
+    overflow-x: hidden;
     position: absolute;
     right: 0;
     top: 0;
     height: 100vh;
-    width: 80%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
   }
 
   nav ul.slide {
+    transition: 0.4s;
     opacity: 1;
     transform: translateX(0);
   }
