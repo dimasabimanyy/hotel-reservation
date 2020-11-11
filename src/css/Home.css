@@ -165,7 +165,7 @@
 .room {
   position: relative;
   width: 100%;
-  margin: 0 0.7em;
+  /* margin: 0 0.7em; */
   background-color: var(--white);
 }
 
@@ -261,6 +261,17 @@
   margin: 0 7px;
   font-size: 15px;
   color: #686868;
+}
+
+@media only screen and (max-width: 768px) {
+  .room-info {
+    text-align: center;
+    padding: 1em !important;
+  }
+  .room-additional-info {
+    margin: 0 auto;
+    justify-content: center;
+  }
 }
 
 /* Services */

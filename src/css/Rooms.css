@@ -17,7 +17,6 @@
 
 .filter-form {
   width: 90%;
-  /* background-color: maroon; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -123,19 +122,53 @@
 
 .empty-search {
   background-color: var(--grayBg);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 580px;
+  text-align: center;
+  padding: 1rem 1rem 1rem;
+}
+
+.empty-search h3 {
+  font-size: 1.5rem;
 }
 
 .roomslist {
   background-color: var(--grayBg);
-  padding-bottom: 5em;
+  padding-bottom: 4em;
 }
 
 .roomslist-center {
+  width: 1200px;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2em;
+  padding-left: 0 !important;
+  gap: 2rem;
+}
+
+.roomstlist-container {
+  padding: 0 !important;
+}
+
+@media only screen and (max-width: 1250px) {
+  .roomslist-center {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .filter-form {
+    position: relative;
+    padding: 1rem 2rem;
+    width: 95%;
+  }
+
+  .form-group {
+    width: 100% !important;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .room-size div input {
+    width: 100%;
+  }
 }
