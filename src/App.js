@@ -5,7 +5,7 @@ import "./css/Rooms.css";
 import "./css/Gallery.css";
 import "./css/Contact.css";
 import "./css/Tablet.css";
-import { Home } from "./pages/Home";
+import Home from "./pages/Home";
 import { Rooms } from "./pages/Rooms";
 import { Gallery } from "./pages/Gallery";
 import { Contact } from "./pages/Contact";

@@ -25,7 +25,7 @@
 /* globals */
 body {
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 h1,
@@ -290,5 +290,12 @@ footer {
 }
 
 .copyright p {
+  font-size: 16px;
   color: #bdbdbd;
+}
+
+@media screen and (max-width: 768px) {
+  .copyright p {
+    font-size: 13px;
+  }
 }

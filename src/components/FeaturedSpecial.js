@@ -5,13 +5,13 @@ import img1 from "../images/special-item-1.jpg";
 import img2 from "../images/special-item-2.jpg";
 import goldBg from "../images/gold-bg.jpg";
 import { Link } from "react-router-dom";
-import Aos from 'aos';
-import "aos/dist/aos.css"
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function FeaturedSpecial() {
   useEffect(() => {
-    Aos.init()
-  }, [])
+    Aos.init();
+  }, []);
 
   return (
     <div className="featured-special">
@@ -22,7 +22,7 @@ function FeaturedSpecial() {
           color="#fff"
           subColor="#fff"
           aosType="fade-in"
-          aosDuration="1000"
+          aosDuration="800"
         />
         <div className="special-item-wrap">
           <FeaturedSpecialItem
@@ -33,7 +33,12 @@ function FeaturedSpecial() {
             aosDuration="500"
             aosDelay="200"
           />
-          <div className="special-gold" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div
+            className="special-gold"
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-delay="250"
+          >
             <img src={goldBg} alt="Breakfast Package" />
             <div>
               <h6>Only This Week</h6>
@@ -52,8 +57,8 @@ function FeaturedSpecial() {
             title="Kick off summer in NYC"
             img={img2}
             aosType="fade-up"
-            aosDuration="1500"
-            aosDelay="200"
+            aosDuration="900"
+            aosDelay="300"
           />
         </div>
       </div>

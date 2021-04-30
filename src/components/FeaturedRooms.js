@@ -36,12 +36,12 @@ export default class FeaturedRooms extends Component {
             title="Rooms & Suites"
             subTitle="Discover"
             aosType="fade-in"
-            aosDuration="1000"
+            aosDuration="800"
           />
           <div
             className="featured-rooms-carousel"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="800"
           >
             {loading ? (
               <Loading />
