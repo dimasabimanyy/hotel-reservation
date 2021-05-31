@@ -438,11 +438,11 @@
 .btn-experience {
   background: var(--primaryColor);
   color: var(--white);
+  transition: 0.2s !important;
 }
 
 .btn-experience:hover {
-  background: var(--white);
-  color: var(--black);
+  background: #dd9836;
 }
 
 /* Testimonials section */

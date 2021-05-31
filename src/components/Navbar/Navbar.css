@@ -44,6 +44,7 @@ nav ul li h6:hover {
   height: 20px;
   justify-content: space-between;
   position: relative;
+  cursor: pointer;
 }
 
 /* .menu-toggle input {

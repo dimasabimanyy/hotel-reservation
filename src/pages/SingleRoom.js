@@ -88,7 +88,10 @@ export default class SingleRoom extends Component {
                 from <div></div>
                 <span>${price}</span>/night
               </p>
-              <Link to="/rooms" className="btn-primary single-room">
+              <Link
+                to="/rooms"
+                className="btn-primary single-room btn-single-room"
+              >
                 Check availability this room
               </Link>
             </div>
